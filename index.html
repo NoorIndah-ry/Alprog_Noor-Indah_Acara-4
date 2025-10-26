@@ -1,0 +1,233 @@
+<!DOCTYPE html> <!--menunjukkan bahwa tipe dokumennya HTML-->
+<html lang="en"> <!--Bahasa utama yang digunakan adalah bahasa English-->
+<head> <!--pembuka head atau kepala halaman untuk pengaturan dokumen-->
+    <meta charset="UTF-8"> <!--merupakan karakter encoding halaman menggunakan UTF-8-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Pengaturan halaman agar responsif ketika terjadi perubahan pada layar perangkat dengan zoom awal adalah 100%-->
+    <title>Noor Indah Acara 4</title> <!--judul halaman yang akan ditampilkan di tab browser-->
+</head> <!--penutup dari tag head-->
+
+    <!--Style berfungsi sebagai tag untuk melakukan pengaturan tampilan dari halaman HTML.-->
+    <!--pengaturan untuk contentwrapper adalah display : flex yang berupa pengaturan elemen bersifat fleksibel dan penyusunan elemen didalamnya mudah diatur. Border-bottom, Border-right, dan Border-left dengan ukuran 2 pixels dan berwarna solid black-->
+    <!--pengaturan untuk logo berupa width atau persentase pengisian ruang di halaman html diasumsikan 100% jika full satu layar sehingga jika dituliskan 25% berarti ruang yang digunakan hanya seperempat dari 100% adalah tempat untuk logo. Penagturan lainnya adalah display : flex (penyusunan elemen dapat dilakukan fleksibel), justify-content : center (pengaturan elemen agar berada di tengah), align-items : flex-start (untuk mengatur elemen supaya rata atas secara vertikal), dan padding : untuk memberikan jarak 10 piksel dari ruang dalam.-->
+    <!--judul juga diatur dengan penggunaan halaman 75%, posisi teks yang ditengah, dan justify-content : center agar elemen berada ditengah secara horizontal-->
+    <!--list memiliki pengaturan width sebesar 25% dengan garis tepi sebelah kanan (border-right) berukuran 2 piksel yang berwarna solid black-->
+    <!--tabel dengan pengatura width sebesar 25%, display: flex, posisi tabel secara horicontal di tengah (justify-content: center), elemen yang diatur supaya rata atas secara vertikal (align-items: flex-start), dan jarak tabel dengan garis tepi bawah sebesar 10 piksel (padding-bottom: 10px)-->
+    <!--login dengan pengaturan width sebesar 99.8%, posisi teks yang berada di tengah, dan di keempat sisi diberi border berukuran 2 piksel berwarna solid black-->
+    <!--footer dilakukan pengaturan posisi teks adalah center yang diberi garis tepi untuk tiga sisi (border-bottom, right, dan left) berukuran 2 piksel berwarna solid black, dan padding sebesar 2 piksel-->
+    <!--logo_jepara merupakan logo semboyan dari Kabupaten jepara yang terletak di bawah tabel dengan posisi di tengah dan jarak sebesar 5 piksel, width 100%, serta align-items: flex-start-->
+    <style>
+        .contentwrapper{
+            display : flex;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+        }
+        .logo{
+            Width : 25%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 10px;
+        }
+        .judul{
+            width: 75%;
+            text-align: center;
+            justify-content: center;
+        }
+        .list{
+            width: 25%;
+            border-right: 2px solid black;  
+        }
+        .Tabel{
+           width: 75%;
+           display: flex;
+           justify-content: center;
+           align-items: flex-start;
+           padding-bottom: 10px;
+        }
+        .login{
+           width: 99.8%;
+           text-align: right;
+           border-bottom: 2px solid black;
+           border-right: 2px solid black;
+           border-left: 2px solid black;
+           border-top: 2px solid black;
+        }
+        .footer{
+           text-align: center;
+           border-bottom: 2px solid black;
+           border-right: 2px solid black;
+           border-left: 2px solid black; 
+           padding: 2px;
+        }
+        .logo_jepara{
+            Width : 100%;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 5px;
+        }
+    </style> <!--penutup dari tag style-->
+
+<body bgcolor="cornsilk"> <!--merupakan tag yang digunakan untuk mendefiniskan isi utama halaman pada HTML dengan pengaturan warna latar belakang adalah cornsilk-->
+
+    <div class="login"> <!--pembuka div bernama "login"-->
+        <p><b>Login</b></p> <!--penambahan teks berupa "Login" dengan pengaturan teks yang tebal (b) dan berupa paragraf (p)-->
+    </div> <!--penutup dari div class "Login"-->
+
+    <div class="contentwrapper"> <!--pembuka div bernama "contentwrapper"-->
+   <div class="logo"> <img src="Logo_Pemkab_Jepara.jpg" width="100" height="150"> </div> <!--wadah bernama "logo" yang didalamnya sudah termuat sumber foto yang digunakan dan pengaturan foto dengan width=100 dan height=150 yang diakhiri dengan penutup div-->
+   <div class="judul"> <!--wadah untuk elemen html dari kelas "judul"-->
+        <h1>SISTEM INFORMASI GEOGRAFIS</h1> <!--Penulisan judul berupa "SISTEM INFORMASI GEOGRAFIS" dengan ukuran h1 atau ukuran paling besar-->
+        <h2><i>KABUPATEN JEPARA</i></h2> <!--Penulisan judul berupa "KABUPATEN JEPARA" dengan pengaturan tulisan miring dan ukuran h2-->
+        </div> <!--penutup div class "judul"-->
+    </div> <!--penutup div class "contentwrapper"-->
+
+    <div class="contentwrapper"> <!--wadah untuk mengelompokkan elemen html yang bernama "contentwrapper"-->
+    <div class="list"> <!--wadah bernama lis untuk mengelompok elemen list didalamnya dengan nama wadah "list"-->
+        <ul type=disc> <!--pembuka tag untuk membuat daftar yang tidak berurutan (ul atau unordered list) dengan tipe simbol daftar adalah bulatan hitam atau disc-->
+            <il><b>Penduduk</b></il><br> <!--item daftar pertama yang berisi teks "Penduduk" berhuruf tebal dan terdapat baris baru setelah item (line break)-->
+            <il>Geografi dan Iklim</il><br> <!--item kedua bertuliskan "Geografi dan Iklim" dan ada baris baru setelahnya-->
+            <il>Pemerintahan</il><br> <!--item ketiga bertuliskan "Pemerintahan" dan ada baris baru setelahnya-->
+            <il>Sosial</il><br> <!--item keempat bertuliskan "Sosial" dan ada baris baru setelahnya-->
+            <il>Pertanian</il><br> <!--item kelima bertuliskan "Pertanian" dan ada baris baru setelahnya-->
+            <il>Industri</il><br> <!--item keenam bertuliskan "Industri" dan ada baris baru setelahnya-->
+            <il>Pariwisata</il><br> <!--item ketujuh bertuliskan "Pariwisata" dan ada baris baru setelahnya-->
+            <il>Keuangan</il><br> <!--item terakhir dari daftar yang bertuliskan "Keuangan"-->
+        </ul> <!--penutup daftar yang tidak berurutan-->
+    </div> <!--penutup wadah bernama "list"-->
+
+    <div class="Tabel"> <!--merupakan wadah atau kontainer yang mengelompokkan elemen html berupa elemen tabel dalam satu grup dengan nama "Tabel".-->
+        <table border="3"; cellpadding="5"; cellspacing="5"; text-align="center"> <!--Pengaturan elemen tabel berupa cellpadding atau pengaturan jarak antara sel dengan teks agar tidak menempel ke tepi sel dan meningkatkan keterbacaan teks serta lebih rapi. Cellspacing itu merupakan pengaturan jarak antar sel atau untuk memberikan spasi antara sel satu dengan sel lain. Pada text-align berguna untuk perataan teks secara horizontal dan align text yang digunakan adalah center maka teks akan diratakan ke tengah.-->
+            <caption><b><h3>PENDUDUK</h3></b></caption> <!--Pada caption berguna untuk menambahkan judul dari tabel tersebut dengan pengaturan font adalah bold (b) dan berukuran h3.-->
+
+            <tr bgcolor="blanchedalmond"> <!--tr digunakan untuk membuat baris dalam tabel, dimana setiap tr (table row) berisi satu baris atau lebih th (tabel head) atau td (tabel data).-->
+                <th>KECAMATAN</th> <!--th (tabel header) digunakan untuk membuat sel header pada tabel yang didalamnya dapat memuat judul untuk tiap kolom dan penulisan teks didalam th akan bercetak tebal seperti pada sel bernama "KECAMATAN"-->
+                <th>LUAS WILAYAH (Km2)</th> <!--th digunakan untuk membuat sel header pada pada tabel dengan nama tiap sel yang dapat disesuaikan dan secara default akan bercetak tebal seperti pada "LUAS WILAYAH".-->
+                <th>JUMLAH PENDUDUK (ribu)</th> <!--th digunakan untuk membuat sel header pada pada tabel dengan nama tiap sel yang dapat disesuaikan dan secara default akan bercetak tebal seperti pada "JUMLAH PENDUDUK (ribu)".-->
+                <th>KEPADATAN PENDUDUK (per Km2)</th> <!--th digunakan untuk membuat sel header pada pada tabel dengan nama tiap sel yang dapat disesuaikan dan secara default akan bercetak tebal seperti pada "KEPADATAN PEDNDUDUK (per Km2)".-->
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="burlywood"> <!--tabel row (baris) dengan warna burlywood dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Bangsri</td> <!--sel nama kecamatan di Kabupaten Jepara-->
+                <td><center>90,79</center></td> <!--sel Luas Kecamatan Bangsri sebensar 90,79 km2-->
+                <td><center>105.500</center></td> <!--sel Jumlah penduduk di Kecamatan Bangsri adalah 105.500-->
+                <td><center>1.162</center></td> <!--sel Kepadatan penduduk Kecamatan Bangsri per Km2 adalah 1.162-->
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+             <tr bgcolor="saddlebrown"> <!--tabel row (baris) dengan warna saddlebrown dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Batealit</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>96,20</center></td> <!--sel data luas wilayah di Kecamatan Batealit sebesar 96,20 km2-->
+                <td><center>90.600</center></td> <!--sel data jumlah penduduk sebesar 90.600 -->
+                <td><center>941</center></td> <!--sel data kepadatan penduduk per km2 adalah 941-->
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="burlywood"> <!--tabel row (baris) dengan warna burlywood dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Donorojo</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>101,41</center></td> <!--sel data luas wilayah di Kecamatan Donorojo sebesar 101,41 km2-->
+                <td><center>62.400</center></td> <!--sel data jumlah penduduk sebesar 62.400-->
+                <td><center>615</center></td> <!--sel data kepadatan penduduk per km2 adalah 651-->
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="saddlebrown"> <!--tabel row (baris) dengan warna saddlebrown dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Jepara</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>27,05</center></td> <!--sel data luas wilayah di Kecamatan Jepara sebesar 27,05 km2-->
+                <td><center>85.200</center></td> <!--sel data jumlah penduduk sebesar 85.200-->
+                <td><center>3.148</center></td> <!--sel data kepadatan penduduk per km2 adalah 3.148-->  
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="burlywood"> <!--tabel row (baris) dengan warna burlywood dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Kalinyamatan</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>25,03</center></td> <!--sel data luas wilayah di Kecamatan Kalinyamatan sebesar 25,03 km2-->
+                <td><center>65.600</center></td> <!--sel data jumlah penduduk sebesar 65.600-->
+                <td><center>2.621</center></td> <!--sel data kepadatan penduduk per km2 adalah 2.621-->  
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="saddlebrown"> <!--tabel row (baris) dengan warna saddlebrown dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Karimunjawa</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>46,62</center></td> <!--sel data luas wilayah di Kecamatan Karimunjawa sebesar 46,62 km2-->
+                <td><center>10.600</center></td> <!--sel data jumlah penduduk sebesar 10.600-->
+                <td><center>228</center></td> <!--sel data kepadatan penduduk per km2 adalah 228-->
+             </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="burlywood"> <!--tabel row (baris) dengan warna burlywood dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Kedung</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>45,71</center></td> <!--sel data luas wilayah di Kecamatan Kedung sebesar 45,71 km2-->
+                <td><center>82.600</center></td> <!--sel data jumlah penduduk sebesar 82.600-->
+                <td><center>1.807</center></td> <!--sel data kepadatan penduduk per km2 adalah 1.807-->
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="saddlebrown"> <!--tabel row (baris) dengan warna saddlebrown dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Keling</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>121,09</center></td> <!--sel data luas wilayah di Kecamatan Keling sebesar 121,09 km2-->
+                <td><center>68.000</center></td> <!--sel data jumlah penduduk sebesar 68.000-->
+                <td><center>562</center></td> <!--sel data kepadatan penduduk per km2 adalah 562-->
+             </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="burlywood"> <!--tabel row (baris) dengan warna burlywood dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Kembang</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>118,77</center></td> <!--sel data luas wilayah di Kecamatan Kembang sebesar 118,77 km2-->
+                <td><center>74.300</center></td> <!--sel data jumlah penduduk sebesar 74.300-->
+                <td><center>626</center></td> <!--sel data kepadatan penduduk per km2 adalah 626-->
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="saddlebrown"> <!--tabel row (baris) dengan warna saddlebrown dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Mayong</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>70,66</center></td> <!--sel data luas wilayah di Kecamatan Mayong sebesar 70,66 km2-->
+                <td><center>97.500</center></td> <!--sel data jumlah penduduk sebesar 97.500-->
+                <td><center>1.381</center></td> <!--sel data kepadatan penduduk per km2 adalah 1.381-->
+             </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="burlywood"> <!--tabel row (baris) dengan warna burlywood dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Mlonggo</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>47,52</center></td> <!--sel data luas wilayah di Kecamatan Mlonggo sebesar 47,52 km2-->
+                <td><center>89.200</center></td> <!--sel data jumlah penduduk sebesar 89.200-->
+                <td><center>1.877</center></td> <!--sel data kepadatan penduduk per km2 adalah 1.877-->
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="saddlebrown"> <!--tabel row (baris) dengan warna saddlebrown dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Nalumsari</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>55,25</center></td> <!--sel data luas wilayah di Kecamatan Nalumsari sebesar 55,25 km2-->
+                <td><center>81.600</center></td> <!--sel data jumlah penduduk sebesar 81.600-->
+                <td><center>1.477</center></td> <!--sel data kepadatan penduduk per km2 adalah 1.477-->
+             </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="burlywood"> <!--tabel row (baris) dengan warna burlywood dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Pakis Aji</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>65,18</center></td> <!--sel data luas wilayah di Kecamatan Pakis Aji sebesar 65,18 km2-->
+                <td><center>63.900</center></td> <!--sel data jumlah penduduk sebesar 63.900-->
+                <td><center>980</center></td> <!--sel data kepadatan penduduk per km2 adalah 980-->
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="saddlebrown"> <!--tabel row (baris) dengan warna saddlebrown dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Pecangaan</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>37,08</center></td> <!--sel data luas wilayah di Kecamatan Pecangaan sebesar 37,08 km2-->
+                <td><center>90.100</center></td> <!--sel data jumlah penduduk sebesar 90.100-->
+                <td><center>2.431</center></td> <!--sel data kepadatan penduduk per km2 adalah 2.431-->
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="burlywood"> <!--tabel row (baris) dengan warna burlywood dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Tahunan</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>42,69</center></td> <!--sel data luas wilayah di Kecamatan Tahunan sebesar 42,69 km2-->
+                <td><center>115.700</center></td> <!--sel data jumlah penduduk sebesar 115.700-->
+                <td><center>2.710</center></td> <!--sel data kepadatan penduduk per km2 adalah 2.710-->
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+
+            <tr bgcolor="saddlebrown"> <!--tabel row (baris) dengan warna saddlebrown dan terdiri atas 4 tabel data secara horizontal.-->
+                <td>Welahan</td> <!--sel data nama kecamatan di Kabupaten Jepara-->
+                <td><center>29,2</center></td> <!--sel data luas wilayah di Kecamatan Welahan sebesar 29,2 km2-->
+                <td><center>81.700</center></td> <!--sel data jumlah penduduk sebesar 81.700-->
+                <td><center>2.796</center></td> <!--sel data kepadatan penduduk per km2 adalah 2.796--> 
+            </tr> <!--untuk menutup atau mengakhiri pembuatan table row (tr)-->
+        </table> <!--penutup tag tabel-->
+    </div> <!--penutup div class dari Tabel-->
+    </div> <!--penutup untuk div content wrapper-->
+
+    <div class="footer"> <!--pembuka wadah bernama "footer"-->
+        <div class="logo_jepara"> <img src="jepara mempesona.jpg" width="100" height="70"></div> <!--pembuka wadah untuk "logo_jepara" yang berisikan sumber foto dan pengaturan width= 100 dan height= 70 yang langsud ditutup menggunakan /div-->
+        <ul type=disc> <!--pembuka tag untuk membuat daftar yang tidak berurutan (ul atau unordered list) dengan tipe simbol daftar adalah bulatan hitam atau disc-->
+        <b>Pemerintahan Kabupaten Jepara</b><br> <!--penambahan elemen teks bercetak tebal berupa "Pemerintahan Kabupaten Jepara"-->
+        <b>Jl. Shima No.1 A, Pengkol I, Pengkol, Kec. Jepara, Kabupaten Jepara, Jawa Tengah 59415</b> <!--penulisan elemen teks bercetak tebal berupa "Jl. Shima No.1 A, Pengkol I, Pengkol, Kec. Jepara, Kabupaten Jepara, Jawa Tengah 59415"-->
+        </ul> <!--penutup daftar yang tidak berurutan-->
+    </div> <!--penutup div class dari "footer"-->
+</body> <!--penutup tag body yang dimulai dari pengaturan bgcolor hingga penutup div class "footer"-->
+</html> <!--tag penutup untuk mengakhiri dokumen HTML-->
